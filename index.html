@@ -1,199 +1,150 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tartumaa Ehitusmehed OÜ – Ehitus Tartus ja Tartumaal</title>
+
+<!-- Meta / Facebook Pixel -->
+<meta name="description" content="Tartumaa Ehitusmehed OÜ pakub usaldusväärseid ehitusteenuseid Tartus ja Tartumaal. Uusehitus, renoveerimine, ehitusmaterjalide paigaldus ja projektijuhtimine.">
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID_HERE'); 
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google Ads / Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-YOUR_ADS_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-YOUR_ADS_ID');
+</script>
+
 <style>
-    body {
-        margin: 0; 
-        font-family: Arial, sans-serif; 
-        background: #f9f9f9; 
-        color: #222; 
-        line-height: 1.6;
-    }
-    header {
-        background: #004b8d;
-        color: white; 
-        text-align: center; 
-        padding: 60px 20px;
-    }
-    header h1 {
-        margin: 0; font-size: 3em;
-    }
-    header p {
-        font-size: 1.3em; margin-top: 10px;
-    }
-    nav {
-        background: #003366; 
-        display: flex; 
-        justify-content: center; 
-        gap: 20px; 
-        padding: 15px 0;
-    }
-    nav a {
-        color: white; 
-        text-decoration: none; 
-        font-weight: bold; 
-        font-size: 1.1em;
-        padding: 6px 12px;
-        border-radius: 5px;
-        transition: background 0.3s ease;
-    }
-    nav a:hover {
-        background: #001f4d;
-    }
-    section {
-        max-width: 1000px; 
-        margin: 40px auto; 
-        background: white; 
-        padding: 30px; 
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    section h2 {
-        text-align: center; 
-        margin-bottom: 30px;
-        color: #004b8d;
-        font-size: 2.5em;
-    }
-    .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        gap: 30px;
-    }
-    .service {
-        background: #f0f8ff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        transition: transform 0.3s ease;
-    }
-    .service:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    }
-    .service img {
-        width: 100%; 
-        border-radius: 10px; 
-        margin-bottom: 15px;
-        display: block;
-    }
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-        gap: 20px;
-    }
-    .gallery img {
-        width: 100%;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-        transition: transform 0.3s ease;
-        display: block;
-    }
-    .gallery img:hover {
-        transform: scale(1.05);
-    }
-    #contact p {
-        max-width: 600px; 
-        margin: 0 auto; 
-        font-size: 1.1em; 
-        line-height: 1.7;
-        text-align: center;
-    }
-    #contact a {
-        color: #004b8d;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    #contact a:hover {
-        text-decoration: underline;
-    }
-    footer {
-        background: #004b8d; 
-        color: white; 
-        text-align: center; 
-        padding: 25px 20px;
-        font-size: 1em;
-        margin-top: 60px;
-    }
+  body {margin:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;background:#f9f9f9;color:#222;line-height:1.6;}
+  header {background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;height:300px;color:white;text-align:center;display:flex;flex-direction:column;justify-content:center;text-shadow:0 0 8px rgba(0,0,0,0.7);}
+  header h1 {margin:0;font-size:3rem;}
+  header p {margin-top:10px;font-size:1.4rem;}
+  nav {background:#004b8d;display:flex;justify-content:center;gap:20px;padding:15px 0;}
+  nav a {color:white;text-decoration:none;font-weight:600;font-size:1.1rem;padding:8px 15px;border-radius:6px;transition:0.3s;}
+  nav a:hover {background:#003366;}
+  main {max-width:1000px;margin:40px auto;padding:0 20px;}
+  section {background:white;border-radius:10px;padding:30px;margin-bottom:40px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+  section h2 {color:#004b8d;margin-bottom:25px;font-size:2rem;text-align:center;}
+  .services {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+  .service {background:#f0f8ff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.08);transition:0.3s;}
+  .service:hover {transform:translateY(-6px);box-shadow:0 6px 20px rgba(0,0,0,0.12);}
+  .service img {width:100%;border-radius:10px;margin-bottom:15px;display:block;}
+  .service h3 {color:#003366;margin-top:0;}
+  .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+  .gallery img {width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.15);transition:0.3s;display:block;}
+  .gallery img:hover {transform:scale(1.05);}
+  #contact p {max-width:600px;margin:0 auto;font-size:1.1rem;line-height:1.7;text-align:center;}
+  #contact a {color:#004b8d;text-decoration:none;font-weight:600;}
+  #contact a:hover {text-decoration:underline;}
+  footer {background:#004b8d;color:white;text-align:center;padding:25px 20px;font-size:1rem;}
+  form {display:flex;flex-direction:column;gap:15px;max-width:600px;margin:20px auto;}
+  form input, form textarea {padding:10px;border:1px solid #ccc;border-radius:6px;font-size:1rem;}
+  form button {padding:12px;background:#004b8d;color:white;font-weight:600;border:none;border-radius:6px;cursor:pointer;transition:0.3s;}
+  form button:hover {background:#003366;}
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Tartumaa Ehitusmehed OÜ</h1>
-    <p>Usaldusväärsed ehitus- ja remonditeenused Tartus ja Tartumaal</p>
+  <h1>Tartumaa Ehitusmehed OÜ</h1>
+  <p>Usaldusväärsed ehitus- ja remonditeenused Tartus ja Tartumaal</p>
 </header>
 
 <nav>
-    <a href="#about">Meist</a>
-    <a href="#services">Teenused</a>
-    <a href="#gallery">Galerii</a>
-    <a href="#contact">Kontakt</a>
+  <a href="#about">Meist</a>
+  <a href="#services">Teenused</a>
+  <a href="#gallery">Galerii</a>
+  <a href="#contact">Kontakt</a>
 </nav>
 
+<main>
+
 <section id="about">
-    <h2>Meist</h2>
-    <p>Tartumaa Ehitusmehed OÜ on Tartus ja Tartumaal tegutsev usaldusväärne ehitusfirma, mis pakub kvaliteetseid ehitusteenuseid nii eramajade, korterite kui äripindade valdkonnas. Meie kogenud meeskond on pühendunud parimate lahenduste leidmisele ja kliendirahulolu tagamisele.</p>
-    <p>Oleme tuntud oma professionaalsuse, täpsuse ja töö kvaliteedi poolest. Teostame projekte alates uusehitusest kuni renoveerimiseni, pakkudes konsultatsioone ja projektijuhtimist.</p>
-    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD... (lühendatud siin vastuse mahu säästmiseks)" alt="Tartu ehitusprojekt" />
+  <h2>Meist</h2>
+  <p>Tartumaa Ehitusmehed OÜ on pikaajalise kogemusega ehitusettevõte, mis pakub kvaliteetseid ja usaldusväärseid ehitusteenuseid Tartus ja Tartumaal. Meie professionaalne meeskond aitab teid nii uusehituse, renoveerimise kui ka ehitusmaterjalide paigaldusega.</p>
+  <p>Oleme pühendunud klientide rahulolule ning iga projekt viiakse lõpuni täpselt ja kokkulepitud ajaraamides.</p>
+  <img src="https://images.unsplash.com/photo-1593032465179-85faac49c89a?auto=format&fit=crop&w=1200&q=80" alt="Ehitusprojekt Tartus">
 </section>
 
 <section id="services">
-    <h2>Teenused</h2>
-    <div class="services">
-        <div class="service">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 pilt 1)" alt="Uusehitus" />
-            <h3>Uusehitus</h3>
-            <p>Pakume täislahendust uusehituse projekteerimisest kuni lõpptöödeni. Meie meeskond tagab kvaliteetse ja vastupidava tulemuse, kasutades parimaid materjale ja tehnoloogiaid.</p>
-            <p>Ehitusprojekti iga samm on hoolikalt planeeritud ning teostatud just teie vajadustele vastavalt.</p>
-        </div>
-        <div class="service">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 pilt 2)" alt="Renoveerimine" />
-            <h3>Renoveerimine ja remont</h3>
-            <p>Renoveerime ja taastame vanad hooned ning korterid. Aitame kaasa maja väärtuse tõstmisele ning tänapäevaste standardite täitmisele.</p>
-            <p>Tööd teostame täpselt ja vastutustundlikult, kasutades kvaliteetseid materjale ja meetodeid.</p>
-        </div>
-        <div class="service">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 pilt 3)" alt="Ehitusmaterjalide paigaldus" />
-            <h3>Ehitusmaterjalide paigaldus</h3>
-            <p>Paigaldame erinevaid ehitusmaterjale: põrandakatteid, seinakatteid, terrasse ja fassaade.</p>
-            <p>Tagame professionaalse paigalduse, mis vastab kõrgeimatele kvaliteedistandarditele.</p>
-        </div>
-        <div class="service">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 pilt 4)" alt="Konsultatsioon ja projektijuhtimine" />
-            <h3>Konsultatsioon ja projektijuhtimine</h3>
-            <p>Pakume ehitusnõustamist ja projektijuhtimist, et tagada ehitusprojekti sujuv kulg eelarves ja ajagraafikus.</p>
-            <p>Meie eksperdid toetavad teid igas ehitusprotsessi faasis, tagades maksimaalse kvaliteedi.</p>
-        </div>
+  <h2>Teenused</h2>
+  <div class="services">
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1562072543-68b0b6f8e5d6?auto=format&fit=crop&w=600&q=80" alt="Uusehitus">
+      <h3>Uusehitus</h3>
+      <p>Pakume täielikku ehituslahendust alates projekteerimisest kuni valmimiseni. Meie meeskond kasutab kaasaegseid materjale ja meetodeid, et tagada vastupidav ja kvaliteetne tulemus.</p>
     </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1581091012184-622f33a9d8b5?auto=format&fit=crop&w=600&q=80" alt="Renoveerimine">
+      <h3>Renoveerimine ja remont</h3>
+      <p>Renoveerime kortereid, maju ja äripindu. Täidame kõik tööd kvaliteetselt ja tähtaegselt, aidates hoida ja tõsta teie kinnisvara väärtust.</p>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1602526213846-c1962f7811fc?auto=format&fit=crop&w=600&q=80" alt="Ehitusmaterjalide paigaldus">
+      <h3>Ehitusmaterjalide paigaldus</h3>
+      <p>Paigaldame põrandakatteid, seinakatteid, terrassilahendusi ja fassaade, kasutades ainult parimaid materjale ja tehnoloogiaid.</p>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1600585154295-6c8d8c8d5f1a?auto=format&fit=crop&w=600&q=80" alt="Konsultatsioon">
+      <h3>Konsultatsioon ja projektijuhtimine</h3>
+      <p>Pakume professionaalset ehitusnõustamist ja projektijuhtimist, et teie ehitusprojekt kulgeks sujuvalt ja eelarves püsimiseks.</p>
+    </div>
+  </div>
 </section>
 
 <section id="gallery">
-    <h2>Galerii</h2>
-    <div class="gallery">
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 galeriipilt 1)" alt="Ehitus Tartu linnas" />
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 galeriipilt 2)" alt="Tartu maja renoveerimine" />
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 galeriipilt 3)" alt="Ehitusmaterjalide paigaldus" />
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (base64 galeriipilt 4)" alt="Tartu linn ehitus" />
-    </div>
+  <h2>Galerii</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1602526213846-c1962f7811fc?auto=format&fit=crop&w=600&q=80" alt="Ehitus Tartu linnas">
+    <img src="https://images.unsplash.com/photo-1581091012184-622f33a9d8b5?auto=format&fit=crop&w=600&q=80" alt="Tartu maja renoveerimine">
+    <img src="https://images.unsplash.com/photo-1562072543-68b0b6f8e5d6?auto=format&fit=crop&w=600&q=80" alt="Ehitusmaterjalide paigaldus">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Tartu linn ehitus">
+  </div>
 </section>
 
 <section id="contact">
-    <h2>Kontakt</h2>
-    <p>
-        Tartumaa Ehitusmehed OÜ<br />
-        E-post: <a href="mailto:info@tartumaehitusmehed.ee">info@tartumaehitusmehed.ee</a><br />
-        Telefon: +372 5555 5555<br />
-        Asukoht: Tartu, Eesti
-    </p>
-    <p>Võta meiega ühendust, et arutada oma ehitusprojekti ja saada tasuta hinnapakkumine!</p>
+  <h2>Kontakt</h2>
+  <p>
+    Tartumaa Ehitusmehed OÜ<br>
+    E-post: <a href="mailto:info@tartumaehitusmehed.ee">info@tartumaehitusmehed.ee</a><br>
+    Telefon: +372 5555 5555<br>
+    Asukoht: Tartu, Eesti
+  </p>
+  <form id="contact-form" action="https://formspree.io/f/YOUREMAIL" method="POST">
+    <input type="text" name="name" placeholder="Teie nimi" required>
+    <input type="email" name="email" placeholder="Teie e-post" required>
+    <textarea name="message" placeholder="Teie sõnum" rows="5" required></textarea>
+    <button type="submit">Saada sõnum</button>
+  </form>
 </section>
 
+</main>
+
 <footer>
-    <p>&copy; 2026 Tartumaa Ehitusmehed OÜ</p>
+  <p>&copy; 2026 Tartumaa Ehitusmehed OÜ</p>
 </footer>
 
 </body>
 </html>
+
