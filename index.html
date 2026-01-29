@@ -1,230 +1,162 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tartumaa Ehitusmehed OÜ – Üldehitustööd Tartus ja Tartumaal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tartumaa Ehitusmehed OÜ – Üldehitustööd Tartus ja Tartumaal</title>
 
-  <!-- SEO ja Open Graph -->
-  <meta name="description" content="Tartumaa Ehitusmehed OÜ pakub täielikke üldehitusteenuseid Tartus ja Tartumaal. Uusehitus, renoveerimine, lammutustööd ja projektijuhtimine.">
-  <meta name="keywords" content="ehitustööd Tartu, renoveerimine Tartu, Tartumaa Ehitusmehed, lammutustööd, projektijuhtimine">
-  <meta name="author" content="Tartumaa Ehitusmehed OÜ">
-  <meta property="og:title" content="Tartumaa Ehitusmehed OÜ – Üldehitustööd Tartus ja Tartumaal">
-  <meta property="og:description" content="Pakume kvaliteetseid üldehitusteenuseid Tartus ja Tartumaal. Uusehitus, renoveerimine, lammutustööd ja projektijuhtimine.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80">
-  <meta property="og:type" content="website">
+<meta name="description" content="Tartumaa Ehitusmehed OÜ pakub täielikke üldehitusteenuseid Tartus ja Tartumaal. Uusehitus, renoveerimine, lammutustööd ja projektijuhtimine.">
+<meta name="keywords" content="ehitustööd Tartu, renoveerimine Tartu, Tartumaa Ehitusmehed, lammutustööd, projektijuhtimine">
+<meta name="author" content="Tartumaa Ehitusmehed OÜ">
 
-  <!-- Google Ads näidis -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-CONVERSION_ID');
-  </script>
+<style>
+/* BASIC RESET */
+* { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+body { line-height:1.6; color:#222; background:#fff; }
+a { text-decoration:none; }
 
-  <!-- Facebook Pixel näidis -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
-  </noscript>
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1567016540902-2c29ffb68a92?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+}
+.hero-overlay {
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.55);
+  z-index:1;
+}
+.hero-content {
+  position: relative; z-index:2;
+  top:50%;
+  transform: translateY(-50%);
+  max-width: 900px;
+  margin:auto;
+  padding:0 20px;
+}
+.hero-content h1 { font-size:3rem; margin-bottom:15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.6);}
+.hero-content p { font-size:1.3rem; margin-bottom:25px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);}
+.btn-primary {
+  background:#2f7d32; color:#fff; padding:14px 36px; border-radius:5px; font-weight:bold; display:inline-block;
+  transition:0.3s;
+}
+.btn-primary:hover { background:#256628; transform:scale(1.05); }
 
-  <!-- Stiilid -->
-  <style>
-    * { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
-    body { line-height: 1.6; color:#222; background:#fff; }
-    a { text-decoration:none; }
+/* SECTIONS */
+.section { max-width:1200px; margin:auto; padding:70px 20px; }
+.section.gray { background:#f5f5f5; }
+.section.dark { background:#222; color:#fff; text-align:center; }
+.section h2 { font-size:2rem; margin-bottom:40px; text-align:center; }
+.center-text { max-width:850px; margin:auto; text-align:center; font-size:1.1rem; line-height:1.8; }
 
-    /* HERO */
-    .hero {
-      position: relative;
-      height: 140px;
-      text-align: center;
-      overflow: hidden;
-      background: #222;
-      color: #fff;
-      padding: 140px 20px 60px 20px;
-    }
-    .hero-overlay {
-      position:absolute; top:0; left:0; width:100%; height:100%;
-      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
-      z-index:1;
-    }
-    .hero-content {
-      position: relative; z-index:2;
-      max-width:900px; margin:auto;
-    }
-    .hero-content h1 { font-size:3rem; margin-bottom:15px; }
-    .hero-content p { font-size:1.3rem; margin-bottom:25px; }
-    .btn-primary {
-      background:#2f7d32; color:#fff; padding:14px 36px; border-radius:5px; font-weight:bold; display:inline-block;
-      transition:0.3s;
-    }
-    .btn-primary:hover { background:#256628; transform:scale(1.05); }
+/* CARDS */
+.cards { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+.card { background:#fff; padding:30px; border-left:6px solid #2f7d32; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:0.3s; }
+.card h3 { margin-bottom:12px; color:#2f7d32; }
+.card p { font-size:1rem; line-height:1.6; }
+.card:hover { transform: translateY(-5px); }
 
-    .hero-siluett {
-      position:absolute;
-      bottom:0; left:-50%;
-      width:200%; height:200px;
-      background: url('https://images.unsplash.com/photo-1567016540902-2c29ffb68a92?auto=format&fit=crop&w=1400&q=80') repeat-x;
-      background-size: cover;
-      animation: siluettScroll 40s linear infinite;
-      z-index:0;
-    }
-    @keyframes siluettScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+/* GALLERY */
+.gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
+.gallery img { width:100%; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.15); }
 
-    /* SECTIONS */
-    .section { max-width:1200px; margin:auto; padding:70px 20px; }
-    .section.gray { background:#f5f5f5; }
-    .section.dark { background:#222; color:#fff; text-align:center; }
-    .section h2 { font-size:2rem; margin-bottom:40px; text-align:center; }
-    .center-text { max-width:850px; margin:auto; text-align:center; font-size:1.1rem; line-height:1.8; }
+/* TESTIMONIALS */
+.testimonials { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+.testimonial { background:#fff; padding:20px; border-left:5px solid #2f7d32; box-shadow:0 3px 8px rgba(0,0,0,0.08); }
+.testimonial p { font-style:italic; }
+.testimonial span { display:block; margin-top:10px; font-weight:bold; color:#2f7d32; }
 
-    /* CARDS */
-    .cards { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
-    .card { background:#fff; padding:30px; border-left:6px solid #2f7d32; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:0.3s; }
-    .card h3 { margin-bottom:12px; color:#2f7d32; }
-    .card p { font-size:1rem; line-height:1.6; }
-    .card:hover { transform: translateY(-5px); }
+/* CONTACT */
+.contact-box { display:grid; grid-template-columns:1fr 1fr; gap:25px; max-width:900px; margin:auto; }
+.contact-form input, .contact-form textarea {
+  width:100%; padding:12px; margin-bottom:12px; border-radius:4px; border:1px solid #bbb; font-size:1rem;
+}
+.contact-form button { background:#2f7d32; color:#fff; padding:14px; border:none; cursor:pointer; border-radius:4px; font-weight:bold; transition:0.3s; }
+.contact-form button:hover { background:#256628; transform:scale(1.02); }
 
-    /* GALLERY */
-    .gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
-    .gallery img { width:100%; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.15); }
+/* FOOTER */
+footer { background:#111; color:#ccc; text-align:center; padding:22px; font-size:0.9rem; }
 
-    /* TESTIMONIALS */
-    .testimonials { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
-    .testimonial { background:#fff; padding:20px; border-left:5px solid #2f7d32; box-shadow:0 3px 8px rgba(0,0,0,0.08); }
-    .testimonial p { font-style:italic; }
-    .testimonial span { display:block; margin-top:10px; font-weight:bold; color:#2f7d32; }
+/* RESPONSIVE */
+@media(max-width:768px) {
+  .contact-box { grid-template-columns:1fr; }
+  .hero-content h1 { font-size:2.2rem; }
+  .hero { height:350px; }
+}
+</style>
 
-    /* CONTACT */
-    .contact-box { display:grid; grid-template-columns:1fr 1fr; gap:25px; max-width:900px; margin:auto; }
-    .contact-form input, .contact-form textarea {
-      width:100%; padding:12px; margin-bottom:12px; border-radius:4px; border:1px solid #bbb;
-      font-size:1rem;
-    }
-    .contact-form button { background:#2f7d32; color:#fff; padding:14px; border:none; cursor:pointer; border-radius:4px; font-weight:bold; transition:0.3s; }
-    .contact-form button:hover { background:#256628; transform:scale(1.02); }
-
-    /* FOOTER */
-    footer { background:#111; color:#ccc; text-align:center; padding:22px; font-size:0.9rem; }
-
-    @media(max-width:768px) {
-      .contact-box { grid-template-columns:1fr; }
-      .hero-content h1 { font-size:2.2rem; }
-      .hero { padding:100px 20px 60px 20px; }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Üldehitustööd Tartus & Tartumaal</h1>
-      <p><strong>Tartumaa Ehitusmehed OÜ</strong> – kindel partner ehituses</p>
-      <a href="#kontakt" class="btn-primary">Küsi tasuta pakkumist</a>
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Üldehitustööd Tartus & Tartumaal</h1>
+    <p><strong>Tartumaa Ehitusmehed OÜ</strong> – kindel partner ehituses</p>
+    <a href="#kontakt" class="btn-primary">Küsi tasuta pakkumist</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Meist</h2>
+  <p class="center-text">
+    Tartumaa Ehitusmehed OÜ on kohaliku kogemusega ehitusettevõte, mis pakub täielikke üldehitusteenuseid
+    eramajadele, korteritele ja äripindadele. Oleme tegutsenud Tartumaal juba üle 10 aasta ning tunneme kohalikke ehitusstandardeid ja linna eripärasid.
+  </p>
+</section>
+
+<section class="section gray">
+  <h2>Meie teenused</h2>
+  <div class="cards">
+    <div class="card"><h3>Uusehitus</h3><p>Vundamendist viimistluseni, õigel ajal ja kvaliteetselt.</p></div>
+    <div class="card"><h3>Renoveerimine & Remont</h3><p>Korterite ja majade uuendamine – vastupidav ja kaunis tulemus.</p></div>
+    <div class="card"><h3>Lammutustööd</h3><p>Turvalised ja keskkonnasõbralikud lammutustööd.</p></div>
+    <div class="card"><h3>Projektijuhtimine</h3><p>Ehitusjuhtimine ja projektiplaanide koostamine algusest lõpuni.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Varasemad tööd Tartus</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1600566753430-f0e3d78f4484?auto=format&fit=crop&w=600&q=80" alt="Tartu maja ehitus">
+    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Korteri renoveerimine Tartus">
+    <img src="https://images.unsplash.com/photo-1627649030626-07c805b365cb?auto=format&fit=crop&w=600&q=80" alt="Tartu ehitusprojekt">
+    <img src="https://images.unsplash.com/photo-1526406915895-9a12a83e5d46?auto=format&fit=crop&w=600&q=80" alt="Projektijuhtimine Tartus">
+  </div>
+</section>
+
+<section class="section gray">
+  <h2>Kliendid räägivad</h2>
+  <div class="testimonials">
+    <div class="testimonial"><p>“Väga professionaalne meeskond! Korteri renoveerimine sujus täiuslikult.”</p><span>- Mari L., Tartu</span></div>
+    <div class="testimonial"><p>“Ehitustööd uusehitusel olid tipptasemel. Soovitan kindlasti!”</p><span>- Jaan K., Tartumaa</span></div>
+    <div class="testimonial"><p>“Klienditeenindus ja kvaliteet olid suurepärased. Täielik rahulolu.”</p><span>- Katre P., Tartu</span></div>
+  </div>
+</section>
+
+<section class="section dark" id="kontakt">
+  <h2>Võta ühendust</h2>
+  <p>Kirjuta meile või helista – anname kiire pakkumise!</p>
+  <div class="contact-box">
+    <div>
+      <p><strong>Tartumaa Ehitusmehed OÜ</strong></p>
+      <p>📍 Tartu & Tartumaa</p>
+      <p>📞 +372 555 5555</p>
+      <p>✉️ info@tartumaaehitusmehed.ee</p>
     </div>
-    <div class="hero-siluett"></div>
-  </header>
+    <form class="contact-form">
+      <input type="text" placeholder="Nimi" required>
+      <input type="tel" placeholder="Telefon" required>
+      <textarea placeholder="Kirjelda oma projekti" required></textarea>
+      <button type="submit">Saada päring</button>
+    </form>
+  </div>
+</section>
 
-  <!-- ETTEVÕTTEST -->
-  <section class="section">
-    <h2>Meist</h2>
-    <p class="center-text">
-      Tartumaa Ehitusmehed OÜ on kohaliku kogemusega ehitusettevõte, mis pakub täielikke üldehitusteenuseid
-      eramajadele, korteritele ja äripindadele. Meie eesmärk on tagada kvaliteet, usaldusväärsus ja
-      kliendi rahulolu igas projektis. Oleme tegutsenud Tartumaal juba üle 10 aasta ning tunneme hästi kohalikke ehitusstandardeid ja linna eripärasid.
-    </p>
-  </section>
-
-  <!-- TEENUSED -->
-  <section class="section gray">
-    <h2>Meie teenused</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Uusehitus</h3>
-        <p>Erinevate hoonete ehitus nullist – vundamendist viimistluseni. Meie meeskond tagab projekti õigeaegse valmimise ja kvaliteedi.</p>
-      </div>
-      <div class="card">
-        <h3>Renoveerimine & Remont</h3>
-        <p>Korterite ja majade uuendamine. Meie renoveerimistööd tagavad vastupidavuse ja esteetilise tulemuse.</p>
-      </div>
-      <div class="card">
-        <h3>Lammutustööd</h3>
-        <p>Korrektsed ja turvalised lammutustööd, sealhulgas jäätmete utiliseerimine vastavalt keskkonnanõuetele.</p>
-      </div>
-      <div class="card">
-        <h3>Projektijuhtimine</h3>
-        <p>Pakkume ehitusjuhtimist ja projektiplaanide koostamist, et kõik sujuks sujuvalt algusest lõpuni.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALERII -->
-  <section class="section">
-    <h2>Varasemad tööd Tartus</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1600566753430-f0e3d78f4484?auto=format&fit=crop&w=600&q=80" alt="Tartu maja ehitus">
-      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Korteri renoveerimine Tartus">
-      <img src="https://images.unsplash.com/photo-1627649030626-07c805b365cb?auto=format&fit=crop&w=600&q=80" alt="Tartu ehitusprojekt">
-      <img src="https://images.unsplash.com/photo-1526406915895-9a12a83e5d46?auto=format&fit=crop&w=600&q=80" alt="Projektijuhtimine Tartus">
-    </div>
-  </section>
-
-  <!-- KLIENDITAGASISIDE -->
-  <section class="section gray">
-    <h2>Kliendid räägivad</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>“Väga professionaalne meeskond! Korteri renoveerimine sujus täiuslikult ja õigeaegselt.”</p>
-        <span>- Mari L., Tartu</span>
-      </div>
-      <div class="testimonial">
-        <p>“Ehitustööd uusehitusel olid tipptasemel. Soovitan kindlasti!”</p>
-        <span>- Jaan K., Tartumaa</span>
-      </div>
-      <div class="testimonial">
-        <p>“Klienditeenindus ja kvaliteet olid suurepärased. Täielik rahulolu.”</p>
-        <span>- Katre P., Tartu</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- KONTAKT -->
-  <section class="section dark" id="kontakt">
-    <h2>Võta ühendust</h2>
-    <p>Kirjuta meile või helista – anname kiire pakkumise ja nõuande!</p>
-    <div class="contact-box">
-      <div>
-        <p><strong>Tartumaa Ehitusmehed OÜ</strong></p>
-        <p>📍 Tartu & Tartumaa</p>
-        <p>📞 +372 555 5555</p>
-        <p>✉️ info@tartumaaehitusmehed.ee</p>
-      </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Nimi" required>
-        <input type="tel" placeholder="Telefon" required>
-        <textarea placeholder="Kirjelda oma projekti" required></textarea>
-        <button type="submit">Saada päring</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>© 2026 Tartumaa Ehitusmehed OÜ</footer>
+<footer>© 2026 Tartumaa Ehitusmehed OÜ</footer>
 
 </body>
 </html>
