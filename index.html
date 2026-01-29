@@ -1,290 +1,204 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tartumaa Ehitusmehed OÜ – Ehitus Tartus ja Tartumaal</title>
-    <style>
-        /* Üldine stiil */
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Päise stiil */
-        header {
-            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-            text-shadow: 2px 2px 5px #000;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            text-shadow: 1px 1px 3px #000;
-        }
-
-        /* Navigeerimise stiil */
-        nav {
-            background: #333;
-            color: white;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        nav a:hover {
-            background: #555;
-        }
-
-        /* Sektsioonide stiil */
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5em;
-            color: #222;
-        }
-
-        /* Teenuste grid */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .service {
-            padding: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-            background-color: #fafafa;
-        }
-
-        .service:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .service img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .service h3 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #004b8d;
-        }
-
-        /* Meist sektsioon */
-        #about p {
-            max-width: 850px;
-            margin: 10px auto;
-        }
-
-        #about img {
-            display: block;
-            margin: 30px auto 0;
-            border-radius: 15px;
-            max-width: 100%;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Galerii grid */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-            display: block;
-        }
-
-        .gallery-item img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Kontakt */
-        #contact p {
-            max-width: 600px;
-            margin: 10px auto;
-            font-size: 1.1em;
-            line-height: 1.7;
-        }
-
-        #contact a {
-            color: #004b8d;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        #contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 1em;
-        }
-
-        footer a {
-            color: #f4f4f4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tartumaa Ehitusmehed OÜ – Ehitus Tartus ja Tartumaal</title>
+<style>
+    body {
+        margin: 0; 
+        font-family: Arial, sans-serif; 
+        background: #f9f9f9; 
+        color: #222; 
+        line-height: 1.6;
+    }
+    header {
+        background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+        color: white; 
+        text-align: center; 
+        padding: 100px 20px;
+        text-shadow: 2px 2px 5px #000;
+    }
+    header h1 {
+        margin: 0; font-size: 3em;
+    }
+    header p {
+        font-size: 1.3em; margin-top: 10px;
+    }
+    nav {
+        background: #004b8d; 
+        display: flex; 
+        justify-content: center; 
+        gap: 20px; 
+        padding: 15px 0;
+    }
+    nav a {
+        color: white; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 1.1em;
+        padding: 6px 12px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+    nav a:hover {
+        background: #003366;
+    }
+    section {
+        max-width: 1000px; 
+        margin: 40px auto; 
+        background: white; 
+        padding: 30px; 
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    section h2 {
+        text-align: center; 
+        margin-bottom: 30px;
+        color: #004b8d;
+        font-size: 2.5em;
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: 30px;
+    }
+    .service {
+        background: #f0f8ff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease;
+    }
+    .service:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+    .service img {
+        width: 100%; 
+        border-radius: 10px; 
+        margin-bottom: 15px;
+        display: block;
+    }
+    .service h3 {
+        margin-top: 0; 
+        color: #003366;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+        gap: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+        display: block;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+    #contact p {
+        max-width: 600px; 
+        margin: 0 auto; 
+        font-size: 1.1em; 
+        line-height: 1.7;
+        text-align: center;
+    }
+    #contact a {
+        color: #004b8d;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #contact a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        background: #004b8d; 
+        color: white; 
+        text-align: center; 
+        padding: 25px 20px;
+        font-size: 1em;
+        margin-top: 60px;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Tartumaa Ehitusmehed OÜ</h1>
-        <p>Usaldusväärsed ehitus- ja remonditeenused Tartus ja Tartumaal</p>
-    </header>
 
-    <nav>
-        <a href="#about">Meist</a>
-        <a href="#services">Teenused</a>
-        <a href="#gallery">Galerii</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
+<header>
+    <h1>Tartumaa Ehitusmehed OÜ</h1>
+    <p>Usaldusväärsed ehitus- ja remonditeenused Tartus ja Tartumaal</p>
+</header>
 
-    <section id="about">
-        <h2>Meist</h2>
-        <p>
-            Tartumaa Ehitusmehed OÜ on Tartus ja Tartumaal tegutsev ehitusfirma, mis on tuntud oma kvaliteedi ja usaldusväärsuse poolest. Meie missiooniks on pakkuda klientidele parimaid lahendusi ehituse valdkonnas – alates esialgsest konsultatsioonist kuni projektide valmimiseni.
-        </p>
-        <p>
-            Meie meeskond koosneb kogenud ehitusspetsialistidest, kellel on aastatepikkune kogemus erinevate ehitusprojektide elluviimisel – eramajad, korterelamud, äripinnad, renoveerimistööd ja palju muud. Iga töö on meile oluline ning pühendume sellele täie hoolega.
-        </p>
-        <p>
-            Tartu linn ja Tartumaa on meie tegevuspiirkonnad, kus meil on palju rahulolevaid kliente ja kordaläinud projekte. Usume, et meie põhjalikkus ja professionaalsus on meie tugevuseks ning lubame, et iga projekt saab tehtud õigesti ja ajaliselt korrektselt.
-        </p>
-        <img src="https://images.unsplash.com/photo-1593032465179-85faac49c89a?auto=format&fit=crop&w=1200&q=80" alt="Tartu ehitusprojekt" />
-    </section>
+<nav>
+    <a href="#about">Meist</a>
+    <a href="#services">Teenused</a>
+    <a href="#gallery">Galerii</a>
+    <a href="#contact">Kontakt</a>
+</nav>
 
-    <section id="services">
-        <h2>Teenused</h2>
-        <div class="services">
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1562072543-68b0b6f8e5d6?auto=format&fit=crop&w=600&q=80" alt="Uusehitus" loading="lazy" />
-                <h3>Uusehitus</h3>
-                <p>
-                    Pakume terviklikke uusehituse lahendusi Tartus ja Tartumaal. Meie kogenud meeskond toetab teid kõigi ehitusetappide jooksul alates projekteerimisest kuni lõpptöödeni. Kasutame kaasaegseid ehitusmaterjale ja -tehnoloogiaid, et tagada vastupidav ja energiasäästlik tulemus.
-                </p>
-                <p>
-                    Olgu tegu eramajaga, korterelamuga või äriruumiga – meie eesmärk on luua just teile sobiv ja kvaliteetne elukeskkond. Meie varasemad projektid Tartus on tunnustatud oma vastupidavuse ja stiili poolest.
-                </p>
-            </div>
+<section id="about">
+    <h2>Meist</h2>
+    <p>Tartumaa Ehitusmehed OÜ on Tartus ja Tartumaal tegutsev usaldusväärne ehitusfirma, mis pakub kvaliteetseid ehitusteenuseid nii eramajade, korterite kui äripindade valdkonnas. Meie kogenud meeskond on pühendunud parimate lahenduste leidmisele ja kliendirahulolu tagamisele.</p>
+    <p>Oleme tuntud oma professionaalsuse, täpsuse ja töö kvaliteedi poolest. Teostame projekte alates uusehitusest kuni renoveerimiseni, pakkudes konsultatsioone ja projektijuhtimist.</p>
+    <img src="https://images.unsplash.com/photo-1593032465179-85faac49c89a?auto=format&fit=crop&w=1200&q=80" alt="Tartu ehitusprojekt" />
+</section>
 
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1581091012184-622f33a9d8b5?auto=format&fit=crop&w=600&q=80" alt="Renoveerimine" loading="lazy" />
-                <h3>Renoveerimine ja remont</h3>
-                <p>
-                    Vanade hoonete ja korterite renoveerimine on meie kireks. Aitame teil uuendada ja väärtustada teie kinnisvara, tehes vajalikud tööd professionaalselt ja detailidele keskendudes.
-                </p>
-                <p>
-                    Renoveerimine võib hõlmata fassaadi parandust, siseviimistlust, katuse vahetust, torustiku ja elektrisüsteemide uuendamist. Tagame, et teie kinnisvara näeb välja nagu uus ja vastab tänapäeva nõuetele.
-                </p>
-            </div>
-
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1602526213846-c1962f7811fc?auto=format&fit=crop&w=600&q=80" alt="Ehitusmaterjalide paigaldus" loading="lazy" />
-                <h3>Ehitusmaterjalide paigaldus</h3>
-                <p>
-                    Pakume professionaalset ehitusmaterjalide paigaldust – põrandakatete, seinakatete, terrasside, fassaadide ja muu paigalduse alal.
-                </p>
-                <p>
-                    Meie meistrid tagavad täpse ja kiire töö, kasutades kaasaegseid tehnikaid ning järgides kõiki ohutusstandardeid. Teie kodu või ettevõtte ruumid saavad just sellise viimistluse, mida olete soovinud.
-                </p>
-            </div>
-
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1600585154295-6c8d8c8d5f1a?auto=format&fit=crop&w=600&q=80" alt="Konsultatsioon ja projektijuhtimine" loading="lazy" />
-                <h3>Konsultatsioon ja projektijuhtimine</h3>
-                <p>
-                    Pakume ekspertiisi ehitusnõustamise ja projektijuhtimise alal. Aitame planeerida, koordineerida ja juhtida teie ehitusprojekti nii, et kõik kulgeks sujuvalt, eelarves ja ajagraafikus.
-                </p>
-                <p>
-                    Meie professionaalne tiim hoiab teid kursis töö edenemisega ning leiab lahendused tekkinud väljakutsetele, et saavutada maksimaalne kvaliteet ja kliendirahulolu.
-                </p>
-            </div>
+<section id="services">
+    <h2>Teenused</h2>
+    <div class="services">
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1562072543-68b0b6f8e5d6?auto=format&fit=crop&w=600&q=80" alt="Uusehitus" />
+            <h3>Uusehitus</h3>
+            <p>Pakume täislahendust uusehituse projekteerimisest kuni lõpptöödeni. Meie meeskond tagab kvaliteetse ja vastupidava tulemuse, kasutades parimaid materjale ja tehnoloogiaid.</p>
+            <p>Ehitusprojekti iga samm on hoolikalt planeeritud ning teostatud just teie vajadustele vastavalt.</p>
         </div>
-    </section>
-
-    <section id="gallery">
-        <h2>Galerii</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1602526213846-c1962f7811fc?auto=format&fit=crop&w=600&q=80" alt="Ehitus Tartu linnas" loading="lazy" />
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1581091012184-622f33a9d8b5?auto=format&fit=crop&w=600&q=80" alt="Tartu maja renoveerimine" loading="lazy" />
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1562072543-68b0b6f8e5d6?auto=format&fit=crop&w=600&q=80" alt="Ehitusmaterjalide paigaldus" loading="lazy" />
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Tartu linn ehitus" loading="lazy" />
-            </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1581091012184-622f33a9d8b5?auto=format&fit=crop&w=600&q=80" alt="Renoveerimine" />
+            <h3>Renoveerimine ja remont</h3>
+            <p>Renoveerime ja taastame vanad hooned ning korterid. Aitame kaasa maja väärtuse tõstmisele ning tänapäevaste standardite täitmisele.</p>
+            <p>Tööd teostame täpselt ja vastutustundlikult, kasutades kvaliteetseid materjale ja meetodeid.</p>
         </div>
-    </section>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1602526213846-c1962f7811fc?auto=format&fit=crop&w=600&q=80" alt="Ehitusmaterjalide paigaldus" />
+            <h3>Ehitusmaterjalide paigaldus</h3>
+            <p>Paigaldame erinevaid ehitusmaterjale: põrandakatteid, seinakatteid, terrasse ja fassaade.</p>
+            <p>Tagame professionaalse paigalduse, mis vastab kõrgeimatele kvaliteedistandarditele.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1600585154295-6c8d8c8d5f1a?auto=format&fit=crop&w=600&q=80" alt="Konsultatsioon ja projektijuhtimine" />
+            <h3>Konsultatsioon ja projektijuhtimine</h3>
+            <p>Pakume ehitusnõustamist ja projektijuhtimist, et tagada ehitusprojekti sujuv kulg eelarves ja ajagraafikus.</p>
+            <p>Meie eksperdid toetavad teid igas ehitusprotsessi faasis, tagades maksimaalse kvaliteedi.</p>
+        </div>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>
-            Tartumaa Ehitusmehed OÜ<br />
-            E-post: <a href="mailto:info@tartumaehitusmehed.ee">info@tartumaehitusmehed.ee</a><br />
-            Telefon: +372 5555 5555<br />
-            Asukoht: Tartu, Eesti<br />
-        </p>
-        <p>Võta meiega ühendust, et arutada oma ehitusprojekti ja saada tasuta hinnapakkumine!</p>
-    </section>
+<section id="gallery">
+    <h2>Galerii</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1602526213846-c1962f7811fc?auto=format&fit=crop&w=600&q=80" alt="Ehitus Tartu linnas" />
+        <img src="https://images.unsplash.com/photo-1581091012184-622f33a9d8b5?auto=format&fit=crop&w=600&q=80" alt="Tartu maja renoveerimine" />
+        <img src="https://images.unsplash.com/photo-1562072543-68b0b6f8e5d6?auto=format&fit=crop&w=600&q=80" alt="Ehitusmaterjalide paigaldus" />
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Tartu linn ehitus" />
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Tartumaa Ehitusmehed OÜ | <a href="#contact">Kontakt</a></p>
-    </footer>
+<section id="contact">
+    <h2>Kontakt</h2>
+    <p>
+        Tartumaa Ehitusmehed OÜ<br />
+        E-post: <a href="mailto:info@tartumaehitusmehed.ee">info@tartumaehitusmehed.ee</a><br />
+        Telefon: +372 5555 5555<br />
+        Asukoht: Tartu, Eesti
+    </p>
+    <p>Võta meiega ühendust, et arutada oma ehitusprojekti ja saada tasuta hinnapakkumine!</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Tartumaa Ehitusmehed OÜ</p>
+</footer>
+
 </body>
 </html>
-
