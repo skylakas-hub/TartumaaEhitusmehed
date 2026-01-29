@@ -3,78 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tartumaa Ehitusmehed OÜ</title>
+  <title>Tartumaa Ehitusmehed OÜ – Üldehitustööd Tartus ja Tartumaal</title>
 
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-    body { background: #fff; color: #222; line-height: 1.6; }
+    * { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; color:#222; background:#fff; }
+    a { text-decoration:none; }
 
+    /* HERO */
     .hero {
       background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
                   url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1350&q=80");
       background-size: cover;
       background-position: center;
-      padding: 100px 20px;
-      text-align: center;
       color: #fff;
+      text-align: center;
+      padding: 120px 20px;
     }
-    .hero h1 { font-size: 2.6rem; margin-bottom: 10px; }
-    .hero .subtitle { font-size: 1.2rem; margin-bottom: 20px; }
+    .hero h1 { font-size: 3rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 25px; }
     .btn-primary {
-      background: #2f7d32; color: #fff;
-      padding: 12px 26px; text-decoration: none;
-      border-radius: 4px; font-weight: bold;
+      background:#2f7d32; color:#fff; padding:14px 32px; border-radius:5px;
+      font-weight:bold; display:inline-block;
     }
-    .btn-primary:hover { background: #256628; }
+    .btn-primary:hover { background:#256628; }
 
-    .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    .section.gray { background: #f5f5f5; }
-    .section.dark { background: #222; color: #fff; text-align: center; }
-    .section h2 { margin-bottom: 28px; font-size: 2rem; }
+    /* SECTIONS */
+    .section { max-width:1200px; margin:auto; padding:70px 20px; }
+    .section.gray { background:#f5f5f5; }
+    .section.dark { background:#222; color:#fff; text-align:center; }
+    .section h2 { font-size:2rem; margin-bottom:40px; text-align:center; }
 
-    .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 20px; }
-    .card { background: #fff; padding: 20px; border-left: 5px solid #2f7d32; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
-    .card h3 { margin-bottom: 10px; }
+    .center-text { max-width:850px; margin:auto; text-align:center; font-size:1.1rem; line-height:1.8; }
 
-    .contact-box { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    /* CARDS */
+    .cards { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+    .card { background:#fff; padding:30px; border-left:6px solid #2f7d32;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:0.3s; }
+    .card h3 { margin-bottom:12px; color:#2f7d32; }
+    .card p { font-size:1rem; line-height:1.6; }
+    .card:hover { transform: translateY(-5px); }
+
+    /* GALLERY */
+    .gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
+    .gallery img { width:100%; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.15); }
+
+    /* TESTIMONIALS */
+    .testimonials { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .testimonial { background:#fff; padding:20px; border-left:5px solid #2f7d32; box-shadow:0 3px 8px rgba(0,0,0,0.08); }
+    .testimonial p { font-style:italic; }
+    .testimonial span { display:block; margin-top:10px; font-weight:bold; color:#2f7d32; }
+
+    /* CONTACT */
+    .contact-box { display:grid; grid-template-columns:1fr 1fr; gap:25px; max-width:900px; margin:auto; }
     .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 3px; border: 1px solid #bbb;
+      width:100%; padding:12px; margin-bottom:12px; border-radius:4px; border:1px solid #bbb;
+      font-size:1rem;
     }
-    .contact-form button {
-      background: #2f7d32; color: #fff; padding: 12px; border: none; cursor: pointer;
-    }
-    .contact-form button:hover { background: #256628; }
+    .contact-form button { background:#2f7d32; color:#fff; padding:14px; border:none; cursor:pointer; border-radius:4px; font-weight:bold; }
+    .contact-form button:hover { background:#256628; }
 
-    footer { text-align: center; padding: 18px; background: #111; color: #ddd; font-size: 0.9rem; }
-    @media (max-width: 768px) { .contact-box { grid-template-columns: 1fr; } }
+    /* FOOTER */
+    footer { background:#111; color:#ccc; text-align:center; padding:22px; font-size:0.9rem; }
+
+    /* RESPONSIVE */
+    @media(max-width:768px) {
+      .contact-box { grid-template-columns:1fr; }
+      .hero h1 { font-size:2.2rem; }
+    }
   </style>
-
 </head>
 
 <body>
 
+  <!-- HERO -->
   <header class="hero">
     <h1>Üldehitustööd Tartus & Tartumaal</h1>
-    <p class="subtitle"><strong>Tartumaa Ehitusmehed OÜ</strong> – kindel partner ehituses</p>
+    <p><strong>Tartumaa Ehitusmehed OÜ</strong> – kindel partner ehituses</p>
     <a href="#kontakt" class="btn-primary">Küsi tasuta pakkumist</a>
   </header>
 
+  <!-- ETTEVÕTTEST -->
   <section class="section">
-    <h2>Ettevõttest</h2>
-    <p>Oleme Tartumaal tegutsev ehitusettevõte, kes pakub usaldusväärseid üldehitustöid nii era- kui äriklientidele.</p>
+    <h2>Meist</h2>
+    <p class="center-text">
+      Tartumaa Ehitusmehed OÜ on kohaliku kogemusega ehitusettevõte, mis pakub täielikke üldehitusteenuseid
+      eramajadele, korteritele ja äripindadele. Meie eesmärk on tagada kvaliteet, usaldusväärsus ja
+      kliendi rahulolu igas projektis.
+    </p>
   </section>
 
+  <!-- TEENUSED -->
   <section class="section gray">
-    <h2>Meie Teenused</h2>
+    <h2>Meie teenused</h2>
     <div class="cards">
-      <div class="card"><h3>Üldehitustööd</h3><p>Uusehitus, vundamentidest viimistluseni.</p></div>
-      <div class="card"><h3>Renoveerimine</h3><p>Korterite ja majade remont töökindlalt.</p></div>
-      <div class="card"><h3>Lammutustööd</h3><p>Turvaline lammutamine ja utiliseerimine.</p></div>
+      <div class="card">
+        <h3>Uusehitus</h3>
+        <p>Erinevate hoonete ehitus nullist – vundamendist viimistluseni. Meie meeskond tagab projekti õigeaegse valmimise.</p>
+      </div>
+      <div class="card">
+        <h3>Renoveerimine & Remont</h3>
+        <p>Vana maja või korteri uuendamine. Oleme spetsialiseerunud kvaliteetsele renoveerimisele, mis püsib aastakümneid.</p>
+      </div>
+      <div class="card">
+        <h3>Lammutustööd</h3>
+        <p>Korrektsed ja turvalised lammutustööd, sealhulgas jäätmete utiliseerimine vastavalt keskkonnanõuetele.</p>
+      </div>
+      <div class="card">
+        <h3>Disain & Projektijuhtimine</h3>
+        <p>Pakkume projekteerimist ja ehitusjuhtimist, et sinu unistuste kodu saaks teoks ilma mureta.</p>
+      </div>
     </div>
   </section>
 
+  <!-- VARASEMAD TÖÖD / GALERII -->
+  <section class="section">
+    <h2>Varasemad tööd</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Eramaja ehitus">
+      <img src="https://images.unsplash.com/photo-1580584124952-2204a4f3a1c2?auto=format&fit=crop&w=600&q=80" alt="Korteri renoveerimine">
+      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Lammutustööd">
+      <img src="https://images.unsplash.com/photo-1509474520651-17a60c6c1e0b?auto=format&fit=crop&w=600&q=80" alt="Projektijuhtimine">
+    </div>
+  </section>
+
+  <!-- KLIENDITAGASISIDE -->
+  <section class="section gray">
+    <h2>Kliendid räägivad</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Väga professionaalne meeskond! Korteri renoveerimine sujus täiuslikult ja õigeaegselt.”</p>
+        <span>- Mari L., Tartu</span>
+      </div>
+      <div class="testimonial">
+        <p>“Ehitustööd uusehitusel olid tipptasemel. Soovitan kindlasti!”</p>
+        <span>- Jaan K., Tartumaa</span>
+      </div>
+      <div class="testimonial">
+        <p>“Klienditeenindus ja kvaliteet olid suurepärased. Täielik rahulolu.”</p>
+        <span>- Katre P., Tartu</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
   <section class="section dark" id="kontakt">
     <h2>Võta ühendust</h2>
+    <p>Kirjuta meile või helista – anname kiire pakkumise ja nõuande!</p>
     <div class="contact-box">
       <div>
         <p><strong>Tartumaa Ehitusmehed OÜ</strong></p>
@@ -85,7 +160,7 @@
       <form class="contact-form">
         <input type="text" placeholder="Nimi" required>
         <input type="tel" placeholder="Telefon" required>
-        <textarea placeholder="Sõnum" required></textarea>
+        <textarea placeholder="Kirjelda oma projekti" required></textarea>
         <button type="submit">Saada päring</button>
       </form>
     </div>
